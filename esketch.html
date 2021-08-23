@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Etch a Sketch</title>
+    <script src="esketch.js" defer></script>
+    <link rel="stylesheet" href="esketch.css">
+</head>
+<body>
+    <h1>Etch-a-sketch</h1>
+  <main>
+    <div id="buttonBox">
+      <button>black</button>
+      <button>color</button>
+      <button>eraser</button>
+      <button>clear</button>
+      <div id="gridSizeBtn">
+      <button class="sizeBtn">16 X 16</button>
+      <button class="sizeBtn">32 X 32</button>
+      <button class="sizeBtn">64 X 64</button>
+    </div>
+    </div>
+    <div id="gridContainer"></div>
+  </main>
+</body>
+</html>
+
+
+
+<!-- learn more about adding CSS styles in JS upon function calls and events
+      =>specifically regarding boxes transitioning to colored and staying that way.
+        get rid of grid size groups in CSS and instead get JS to select for box sizes upon grid creation.
+        click button to erase.
+        only color boxes when hovering AND ??? clicking mouse/not clicking mouse?
+        erase setting to allow erasing individual boxes rather than clear all.
+        color button opens up hexcolor selector. then displays selected color.
+        size will be a slide bar and call gridsize functions and display the current size e.g16X16.
+-->
