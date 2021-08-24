@@ -30,6 +30,16 @@ function createGrid(x){
    for(i=0;i<size;i++){
         gridItem=document.createElement('div');
         gridContainer.appendChild(gridItem);
+        if(size==256){
+            gridItem.style.width="29px";
+            gridItem.style.height="29px";      
+        }else if(size==1024){
+            gridItem.style.width="13.5px";
+            gridItem.style.height="13.5px";
+        }else if(size==4096){
+            gridItem.style.width="4.5px";
+            gridItem.style.height="7px";
+        }
    }  
 };
 
