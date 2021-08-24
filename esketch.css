@@ -50,64 +50,18 @@ main{
   background-color:white;
   min-height: 500px;
   min-width:  500px;
-  max-height: 500px;
+  max-height: 600px;
   max-width: 500px;
   padding:none;
   margin-left: 10%;
 }
-  #gridContainer > *:hover{
+ /*#gridContainer > *:hover{
     background-color: blue;
     transition:os;
-  }
+  }*/
   #gridContainer > *{
     border:1px solid lightgray;
     margin:none;
     padding:none;
-    transition:background-color 0s 30s;
+    /*transition:background-color 0s 1000s;*/
   }
-
-
-/* disused style blocks given JS styling dimensions now.
-/*32x32 grid
-Item{
-  border:1px solid blue;
-  margin:none;
-  padding:none;
-  height: 13.5px;
-  width:  13.5px;
-}
-/*64x64 grid
-item{
-  border:1px solid lightgray;
-  margin:none;
-  padding:none;
-  height: 7px;
-  width:  4.5px;
-  transition:background-color 0s 30s;
-}*/
-
-/* disused sizes
-/*2x2 grid
-Item{
-    border:1px solid blue;
-    margin:none;
-    padding:none;
-    height: 248px;
-    width:  248px;
-  }
-  /*4x4 grid
-  Item{
-    border:1px solid blue;
-    margin:none;
-    padding:none;
-    height: 122px;
-    width:  122px;
-  }
-  /*8x8 grid 
-  Item{
-    border:1px solid blue;
-    margin:none;
-    padding:none;
-    height: 60px;
-    width:  60px;
-  }*/
