@@ -50,18 +50,13 @@ main{
   background-color:white;
   min-height: 500px;
   min-width:  500px;
-  max-height: 600px;
+  max-height: 500px;
   max-width: 500px;
   padding:none;
   margin-left: 10%;
 }
- /*#gridContainer > *:hover{
-    background-color: blue;
-    transition:os;
-  }*/
-  #gridContainer > *{
-    border:1px solid lightgray;
+ .box {
+    border: 1px solid lightgray;
     margin:none;
     padding:none;
-    /*transition:background-color 0s 1000s;*/
   }

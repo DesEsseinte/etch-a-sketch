@@ -3,13 +3,42 @@ const gridContainer=document.querySelector("#gridContainer");
 
 
 //buttons below
+const black=document.querySelector('#black');
+const color=document.querySelector('#color');
 const eraser=document.querySelector("#eraser");
 const clear= document.querySelector("#clear");
 const grid16=document.querySelector("#small");
 const grid32=document.querySelector("#medium");
 const grid64=document.querySelector("#large");
 
-//button click events below
+//////////button click events below/////////////
+black.addEventListener('click', ()=>{
+    paintBlack();
+});
+        black.addEventListener('mousedown', ()=>{
+            black.style.backgroundColor="white";
+            });
+            black.addEventListener('mouseup', ()=>{
+            black.style.backgroundColor="#b00505";
+        });
+color.addEventListener('click', ()=>{
+    paintColor();
+});
+        color.addEventListener('mousedown', ()=>{
+            color.style.backgroundColor="white";
+            });
+            color.addEventListener('mouseup', ()=>{
+            color.style.backgroundColor="#b00505";
+        });
+eraser.addEventListener('click', ()=>{
+    eraseColor();
+});
+        eraser.addEventListener('mousedown', ()=>{
+            eraser.style.backgroundColor="white";
+            });
+            eraser.addEventListener('mouseup', ()=>{
+            eraser.style.backgroundColor="#b00505";
+        });
 clear.addEventListener('click', ()=>{
     clearGrid();
 });
@@ -48,13 +77,14 @@ grid64.addEventListener("click", ()=>{
             grid64.style.backgroundColor="#b00505";
         });
 
-//these two functions create the grid and clear the grid and are called with click events from above.
+///FUNCTIONS called by buttons listed above.
 function createGrid(x){
     clearGrid(parent);
     let size=x**2  
         for(i=0;i<size;i++){
             gridItem=document.createElement('div');
             gridContainer.appendChild(gridItem);
+            gridContainer.children[i].classList.add('box');
             if(size==256){
             gridItem.style.width="29px";
             gridItem.style.height="29px"; 
@@ -65,9 +95,11 @@ function createGrid(x){
             gridItem.style.width="6.1px";
             gridItem.style.height="6.1px";
             }   
-        }   gridItem.addEventListener('mouseover', ()=>{
-            gridItem.style.backgroundColor="blue";
-           });    
+        }document.querySelectorAll('.box').forEach(item => {
+            item.addEventListener('mouseover', ()=>{
+                item.style.background="blue";
+            });
+        });
 };
 function clearGrid(parent){
     parent=gridContainer;
@@ -75,3 +107,24 @@ function clearGrid(parent){
         parent.removeChild(parent.firstChild);   
         }
 };
+function paintBlack(){
+    document.querySelectorAll('.box').forEach(item => {
+        item.addEventListener('mouseover', ()=>{
+            item.style.background="black";
+        });
+    });
+}
+function paintColor(){
+    document.querySelectorAll('.box').forEach(item => {
+        item.addEventListener('mouseover', ()=>{
+            item.style.background="blue";
+        });
+    });
+}
+function eraseColor(){
+    document.querySelectorAll('.box').forEach(item => {
+        item.addEventListener('mouseover', ()=>{
+            item.style.background="white";
+        });
+    });
+}
