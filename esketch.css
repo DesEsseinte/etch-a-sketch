@@ -1,5 +1,5 @@
 body{
-  background-color: #4a4746;
+  background-color: #cedde9;
 
 }
   h1{
@@ -7,8 +7,14 @@ body{
     text-align: center;
     width:250px;
     text-decoration:underline;
-    text-shadow: 1px 1px 20px white;
+    text-shadow: 1px 1px 20px black;
+    font-family:-webkit-pictograph;
 }
+                                                @media screen and (min-height: 1500px){
+                                                  h1{
+                                                    margin-left: 37%;
+                                                  }
+                                                }
 main{
   display:flex;
 }
@@ -20,13 +26,29 @@ main{
     width: 250px;
     margin-top: 60px;
   }
+                                                @media screen and (min-height: 1500px){
+                                                  #buttonBox{
+                                                    position:absolute;
+                                                    width:500px;
+                                                    height:700px;
+                                                    margin-top: 80%;
+                                                    margin-left: 23%;
+                                                  }
+                                                }
     button{
       height: 50px;
       border-radius: 5px;
       background-color:#b00505;
       border:none;
-      box-shadow:2px 2px 10px white;
+      box-shadow:2px 2px 30px black;
+      font-family: walsheim-bold;
+      font-size: 20px;
     }
+                                                @media screen and (min-height: 1500px){
+                                                  button{
+                                                    height:80px;
+                                                  }
+                                                }
     button:hover{
       height: 50px;
       border-radius: 5px;
@@ -46,7 +68,7 @@ main{
         z-index: 2;
         position:fixed;
         width: 130px;
-        height:150px;  
+        height:150px;
         margin-left: 10%;
       }
       .colorMenuActive{
@@ -60,15 +82,18 @@ main{
         z-index: 2;
         position:fixed;
         width: 130px;
-        height:150px;  
+        height:150px;
         margin-left: 10%;
       }
           .colorBtn{
             background-color:white;
             border-radius: 25px;
+            box-shadow: 2px 2px white;
             width: 50px;
             height: 30px;
             margin: 10px;
+            font-family:serif;
+            font-size: 20px;
           }
           .colorBtn:hover{
             background-color:white;
@@ -95,6 +120,12 @@ main{
   padding:none;
   margin-left: 10%;
 }
+                                                @media screen and (min-height: 1500px){
+                                                  #gridContainer{
+                                                    margin-left: 20%;
+                                                  }
+                                                }
+
  .box {
     border: 1px solid lightgray;
     margin:none;

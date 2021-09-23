@@ -131,8 +131,8 @@ function createGrid(x){
             gridItem.style.width="13.5px";
             gridItem.style.height="13.5px";
             }else if(size==4096){
-            gridItem.style.width="6.1px";
-            gridItem.style.height="6.1px";
+            gridItem.style.width="5.8px";
+            gridItem.style.height="5.8px";
             }   
         }document.querySelectorAll('.box').forEach(item => {
             item.addEventListener('mouseover', ()=>{
