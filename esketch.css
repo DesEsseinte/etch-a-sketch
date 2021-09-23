@@ -10,10 +10,11 @@ body{
     text-shadow: 1px 1px 20px black;
     font-family:-webkit-pictograph;
 }
-                                                @media screen and (min-height: 1500px){
-                                                  h1{
-                                                    margin-left: 37%;
-                                                  }
+                                                @media screen and (max-device-width:500px)
+                                                              and  (max-device-height: 1000px){
+                                                              h1{
+                                                              margin-left: 37%;
+                                                              }
                                                 }
 main{
   display:flex;
@@ -26,14 +27,15 @@ main{
     width: 250px;
     margin-top: 60px;
   }
-                                                @media screen and (min-height: 1500px){
-                                                  #buttonBox{
-                                                    position:absolute;
-                                                    width:500px;
-                                                    height:700px;
-                                                    margin-top: 80%;
-                                                    margin-left: 23%;
-                                                  }
+                                                @media screen and (max-device-width:500px)
+                                                              and  (max-device-height: 1000px){
+                                                              #buttonBox{
+                                                              position:absolute;
+                                                              width:500px;
+                                                              height:700px;
+                                                              margin-top: 80%;
+                                                              margin-left: 23%;
+                                                              }
                                                 }
     button{
       height: 50px;
@@ -44,10 +46,11 @@ main{
       font-family: walsheim-bold;
       font-size: 20px;
     }
-                                                @media screen and (min-height: 1500px){
-                                                  button{
-                                                    height:80px;
-                                                  }
+                                                @media screen and (max-device-width:500px)
+                                                              and  (max-device-height: 1000px){
+                                                              button{
+                                                              height:80px;
+                                                              }
                                                 }
     button:hover{
       height: 50px;
@@ -120,10 +123,11 @@ main{
   padding:none;
   margin-left: 10%;
 }
-                                                @media screen and (min-height: 1500px){
-                                                  #gridContainer{
-                                                    margin-left: 20%;
-                                                  }
+                                                @media screen and (max-device-width:500px)
+                                                              and  (max-device-height: 1000px){
+                                                              #gridContainer{
+                                                              margin-left: 20%;
+                                                              }
                                                 }
 
  .box {
