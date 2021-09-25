@@ -32,8 +32,8 @@ main{
                                                               #buttonBox{
                                                               position:absolute;
                                                               width:500px;
-                                                              height:700px;
-                                                              margin-top: 80%;
+                                                              height:650px;
+                                                              margin-top: 65%;
                                                               margin-left: 23%;
                                                               }
                                                 }
@@ -49,7 +49,7 @@ main{
                                                 @media screen and (max-device-width:500px)
                                                               and  (max-device-height: 1000px){
                                                               button{
-                                                              height:80px;
+                                                              height:70px;
                                                               }
                                                 }
     button:hover{
